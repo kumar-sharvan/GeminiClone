@@ -61,6 +61,7 @@ const Main = () => {
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
             onKeyDown={handleKeyPress} // ✅ Press Enter to send
+            autoFocus
           />
           <button className="btn btn-primary" onClick={handleSend}>
             <i className="fa-solid fa-paper-plane"></i>
