@@ -1,0 +1,69 @@
+/* 🎨 Main Container */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background-color: #121212; /* Dark mode */
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+  }
+  
+  /* 🎨 AI Responses Container */
+  .responses-container {
+    flex-grow: 1;
+    width: 75%;
+    max-height: 70vh; /* ✅ Scrollable when content is long */
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5); /* ✅ Dark transparent */
+  }
+  
+  /* 🎨 Response Cards */
+  .response-card {
+    background: #1e1e1e;
+    color: white;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* 🎨 Input Box (Fixed at Bottom) */
+  .input-container {
+    width: 75%;
+    position: sticky;
+    bottom: 10px;
+    background: #121212;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  /* 🎨 AI & User Text */
+  .prompt-text {
+    font-size: 1rem;
+    color: #f1c40f; /* Yellow for user */
+  }
+  .ai-response {
+    font-size: 1rem;
+    color: #1abc9c; /* Teal for AI */
+  }
+  
+  /* 🎨 Scrollbar (for responses) */
+  .responses-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .responses-container::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+  }
+  
+  .responses-container::-webkit-scrollbar-track {
+    background: #222;
+  }
+  

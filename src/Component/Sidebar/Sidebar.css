@@ -1,0 +1,49 @@
+.sidebar {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 0.3s ease-in-out;
+  overflow-x: hidden;
+}
+
+.sidebar.collapsed {
+  width: 3.5rem;
+}
+
+.sidebar.extended {
+  width: 200px;
+}
+
+.sidebar .fa-bars {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 3.5rem;
+  }
+  .sidebar.extended {
+    width: 150px;
+  }
+}
